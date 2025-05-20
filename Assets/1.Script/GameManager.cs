@@ -1,8 +1,8 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
 public class GameManager : MonoBehaviour
 {
-    
+
     public float axisSpeed = 15.0f;
     int score = 0;
     public TMP_Text textScore;
@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+
 
     }
 
