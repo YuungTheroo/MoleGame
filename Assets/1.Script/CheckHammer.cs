@@ -28,6 +28,7 @@ public class CheckHammer : MonoBehaviour
             gameManager.incScore();
             Destroy(gameObject, 0.25f);
             Destroy(collision.gameObject, 0.5f);
+            gameManager.HitMole();
             Debug.Log($"score = {gameManager.getScore()}");
         }
         else if (tag == "Plane")
@@ -41,6 +42,7 @@ public class CheckHammer : MonoBehaviour
             gameManager.decScore();
             Destroy(gameObject, 0.25f);
             Destroy(collision.gameObject, 0.5f);
+            gameManager.HitCat();
             Debug.Log($"score = {gameManager.getScore()}");
         }
     }

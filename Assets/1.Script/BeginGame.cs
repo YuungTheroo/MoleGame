@@ -3,10 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class BeginGame : MonoBehaviour
 {
-    
+
     void Start()
     {
-        Invoke("beginGame", 5.0f); 
+        Invoke("beginGame", 3.0f);
     }
 
 
@@ -17,6 +17,6 @@ public class BeginGame : MonoBehaviour
 
     void beginGame()
     {
-        SceneManager.LoadScene("MoleScene"); 
+        SceneManager.LoadScene("MoleScene");
     }
 }
